@@ -127,9 +127,11 @@ public class BugsOfTheApplication {
         System.out.println();
         System.out.print("After Sorting in ascending order Expenses are:-\n");
         for(int expenditure:arrayList) {
-        	System.out.print(expenditure+" ");
+        	System.out.print(expenditure+" \n");
         }
 
 	}
+    
+    
 
 }

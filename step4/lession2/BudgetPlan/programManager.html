@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="storeData.js"></script>
+    <style>
+    .myDiv {
+    padding-top: 2%;         
+    padding-bottom: 3%;
+    margin-left: 20%;
+    margin-right: 20%;  
+    margin-top: 5%; 
+    height:20% ;    
+    border: 5px outset red;
+    background-color: lightblue;
+    text-align: center;
+    font-size: 50px;
+    
+    }
+</style>
+</head>
+<body>
+    <div class="myDiv">
+    Client Name:
+    <br/><input type="text" id="cname" style="box-sizing:border-box ;height: 40px; width:30%"/><br/>
+    Project Name:
+    <br/><input type="text" id="pname" style="box-sizing:border-box ; height: 40px; width:30%"/><br/>
+    Budget:
+    <br/><input type="text" id="budget" style="box-sizing:border-box ; height: 40px; width:30%"/><br/>
+    <input type="button" value="Add"  style="box-sizing:border-box ; color: rgb(18, 20, 18); height: 40px; width:20%" onclick="addData()"/>
+    <div id="result">
+    </div>
+    <div id="out">
+    </div>
+    </div>
+</body>
+</html>

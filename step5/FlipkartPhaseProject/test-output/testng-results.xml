@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-11T12:52:00 IST" name="Default suite" finished-at="2022-10-11T12:53:08 IST" duration-ms="68695">
+    <groups>
+      <group name="Chrome">
+        <method signature="AppTest.LaunchChrome()[pri:0, instance:com.testing.AppTest@4cc8eb05]" name="LaunchChrome" class="com.testing.AppTest"/>
+        <method signature="AppTest.f()[pri:0, instance:com.testing.AppTest@4cc8eb05]" name="f" class="com.testing.AppTest"/>
+      </group> <!-- Chrome -->
+      <group name="Opera">
+        <method signature="AppTest.LaunchOpera()[pri:0, instance:com.testing.AppTest@4cc8eb05]" name="LaunchOpera" class="com.testing.AppTest"/>
+        <method signature="AppTest.firefox()[pri:0, instance:com.testing.AppTest@4cc8eb05]" name="firefox" class="com.testing.AppTest"/>
+      </group> <!-- Opera -->
+    </groups>
+    <test started-at="2022-10-11T12:52:00 IST" name="Default test" finished-at="2022-10-11T12:53:08 IST" duration-ms="68695">
+      <class name="com.testing.AppTest">
+        <test-method signature="LaunchChrome()[pri:0, instance:com.testing.AppTest@4cc8eb05]" started-at="2022-10-11T12:52:00 IST" name="LaunchChrome" finished-at="2022-10-11T12:52:02 IST" duration-ms="2013" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchChrome -->
+        <test-method signature="LaunchOpera()[pri:0, instance:com.testing.AppTest@4cc8eb05]" started-at="2022-10-11T12:52:02 IST" name="LaunchOpera" finished-at="2022-10-11T12:52:06 IST" duration-ms="4003" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchOpera -->
+        <test-method signature="f()[pri:0, instance:com.testing.AppTest@4cc8eb05]" started-at="2022-10-11T12:52:06 IST" name="f" finished-at="2022-10-11T12:52:35 IST" depends-on-methods="com.testing.AppTest.LaunchChrome" duration-ms="29219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method signature="firefox()[pri:0, instance:com.testing.AppTest@4cc8eb05]" started-at="2022-10-11T12:52:35 IST" name="firefox" finished-at="2022-10-11T12:53:08 IST" depends-on-methods="com.testing.AppTest.LaunchOpera" duration-ms="33400" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firefox -->
+      </class> <!-- com.testing.AppTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,16 @@
+<div>
+    <h2 style="color: violet;">Welcome to home page admin {{user}}</h2><br/>
+    <a routerLink="addAadhar">Add Aadhar</a> | &nbsp;
+    <a routerLink="findAllAadhar">View All Aadhar Generated</a> | &nbsp;
+    <a routerLink="viewAllAadharApply">View New Apply Request</a> | &nbsp;
+    <a routerLink="viewAllUpdateRequest">View All Aadhar Update Request</a> | &nbsp;
+    <a routerLink="viewAllNewCardRequest">View Duplicate Aadhar Request</a> | &nbsp;
+
+    <br/>
+    <hr/>
+        <router-outlet></router-outlet>
+    <hr/>
+  
+    <br/>
+    <input type="button" value="logout" (click)="logout()"/>
+</div>

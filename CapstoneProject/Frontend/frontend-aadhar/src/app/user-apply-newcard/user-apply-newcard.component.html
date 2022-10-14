@@ -1,0 +1,12 @@
+<div>
+    <h2>Apply Duplicate AadharCard</h2><br/>
+    <form [formGroup]="productRef" (ngSubmit)="storeProduct()">
+        <label>Aadhar No</label>&nbsp;&nbsp;
+        <input type="number" formControlName="aadharno"><br/>
+        <label>Reason</label>&nbsp;&nbsp;
+        <input type="text" formControlName="reason"><br/><br/>
+        <input type="submit" value="Submit"/>&nbsp;&nbsp;&nbsp;
+        <input type="reset" value="reset"/><br/>
+    </form><br/>
+    <span style="color:red">{{storeMsg}}</span>
+</div>

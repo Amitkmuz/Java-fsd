@@ -1,0 +1,17 @@
+<div>
+    <h2 style="color: green;">Welcome to home page user {{user}}</h2>
+
+    <a routerLink="userAadharApply">Apply Aadhar Card</a> | &nbsp;&nbsp;
+    <a routerLink="userUpdateAadhar">Update Aadhar Details</a> |  &nbsp;&nbsp;
+    <a routerLink="userApplyNew">Apply Duplicate Card</a> |   &nbsp;&nbsp;
+    <a routerLink="userApplyStatus">Check Aadhar Status</a> |   &nbsp;&nbsp;
+
+    <br/>
+    <hr/>
+    <router-outlet></router-outlet>
+   <hr/>
+   <br/>
+
+
+    <input type="button" value="logout" (click)="logout()"/>
+</div>

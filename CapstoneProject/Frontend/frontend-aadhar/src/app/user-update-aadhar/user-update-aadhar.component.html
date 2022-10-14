@@ -1,0 +1,16 @@
+<div>
+    <h2>Update Aadhar card Details</h2><br/>
+    <form [formGroup]="productRef" (ngSubmit)="storeProduct()">
+        <label>AAdhar No</label>&nbsp;&nbsp;
+        <input type="text" formControlName="aadharno"><br/>
+        <label>Address</label>&nbsp;&nbsp;
+        <input type="text" formControlName="address"><br/>
+        <label>Mobile no</label>&nbsp;&nbsp;
+        <input type="number" formControlName="phone"><br/>
+        <label>Mobile no</label>&nbsp;&nbsp;
+        <input type="date" formControlName="dob"><br/><br/>
+        <input type="submit" value="Submit"/>&nbsp;&nbsp;&nbsp;
+        <input type="reset" value="reset"/><br/>
+    </form><br/>
+    <span style="color:red">{{storeMsg}}</span>
+</div>

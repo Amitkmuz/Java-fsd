@@ -1,0 +1,31 @@
+
+<div>
+    <span *ngFor="let p of users">
+        <table class="table table-striped" border="2px">
+            <tr>
+                <th>Email</th>
+                <th>Name</th>
+                <th>Fathers Name</th>
+                <th>Address</th>
+                <th>Mobile No</th>
+                <th>DOB</th>
+                <th>Status</th>
+                <th>Aadhar No</th>
+            </tr>
+            <tr>
+                <td>{{p.email}}</td>
+                <td>{{p.uname}}</td>
+                <td>{{p.fname}}</td>
+                <td>{{p.address}}</td>
+                <td>{{p.phone}}</td>
+                <td>{{p.dob}} </td>
+                <td>{{p.status}}</td>
+                <td>{{p.uadhno}}</td>
+               
+            </tr>
+        </table>
+       
+        
+        
+    </span>
+</div>

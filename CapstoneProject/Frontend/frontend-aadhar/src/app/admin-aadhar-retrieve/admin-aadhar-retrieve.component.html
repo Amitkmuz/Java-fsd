@@ -1,0 +1,65 @@
+<div>
+    <h3>List Of All Aadhar Generated</h3>
+    <div *ngIf="flag">
+            <h2>Update Aadhar Details</h2>
+            <form (ngSubmit)="updateDataFromDb()">
+                <label>Aadhar No</label>
+                <input type="number" name="aadharno" [(ngModel)]="aadharno" readonly/><br/>
+                <label>Mobile no</label>
+                <input type="number" name="mobileno" [(ngModel)]="mobileno"/><br/>
+                <label>Address</label>
+                <input type="text" name="address" [(ngModel)]="address"/><br/>
+                <label>DOB</label>
+                <input type="date" name="dob" [(ngModel)]="dob"/><br/>
+                <input type="submit" value="update data"/>
+                <input type="reset" value="reset"/>
+            </form>
+    </div>
+    <span *ngFor="let p of aadhars">
+        <table border="1px" style="background-color:bisque ;">
+            <tr>
+                <th>&nbsp;</th>
+                <th>Government Of India</th>
+                <th>&nbsp;</th>
+                
+            </tr>
+            <tr>
+                <td rowspan="7"><img src={{p.url}} width="150px" height="100px"/></td>
+                
+            </tr>
+            <tr >
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>{{p.aadharno}}</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>{{p.name}}</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>{{p.fathersname}}</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>{{p.address}}</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>{{p.dob}}</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>{{p.mobileno}}</td>
+            </tr>
+        </table><br/>
+        
+        <input type="button" value="delete" (click)="deleteAadhar(p.aadharno)"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="button" value="update" (click)="updateAadhar(p)"/>
+    </span>
+</div>

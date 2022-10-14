@@ -1,0 +1,22 @@
+<div>
+    <h2>Generate Aadhar</h2><br/>
+    <form [formGroup]="aadharRef" (ngSubmit)="createAadhar()">
+        <label>Aadhar Number</label>&nbsp;&nbsp;
+        <input type="number" formControlName="aadharno"><br/>
+        <label>Name</label>&nbsp;&nbsp;
+        <input type="text" formControlName="name"><br/>
+        <label>Father's Name</label>&nbsp;&nbsp;
+        <input type="text" formControlName="fathersname"><br/>
+        <label>Mobile No</label>&nbsp;&nbsp;
+        <input type="number" formControlName="mobileno"><br/>
+        <label>Address</label>&nbsp;&nbsp;
+        <input type="text" formControlName="address"><br/>
+        <label>DOB</label>&nbsp;&nbsp;
+        <input type="date" formControlName="dob"><br/>
+        <label>URL</label>&nbsp;&nbsp;
+        <input type="url" formControlName="url"><br/>
+        <input type="submit" value="Generate Aadhar"/>&nbsp;&nbsp;&nbsp;
+        <input type="reset" value="reset"/><br/>
+    </form><br/>
+    <span style="color:red">{{storeMsg}}</span>
+</div>

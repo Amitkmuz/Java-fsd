@@ -1,0 +1,17 @@
+<div>
+    <h2>Login Page</h2><br/>
+    <form [formGroup]="loginRef" (ngSubmit)="signIn()">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>EmailId</label>&nbsp;&nbsp;
+        <input type="email" formControlName="emailid"/><br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label>Password</label>&nbsp;
+        <input type="password" formControlName="password"/><br/>
+        <label>TypeOfUser</label>&nbsp;&nbsp;
+        <input type="radio" name="typeOfUser" value="admin" formControlName="typeOfUser"/>admin
+        <input type="radio" name="typeOfUser" value="user" formControlName="typeOfUser"/>user<br/>
+        <input type="submit" value="signIn"/>
+        <input type="reset" value="reset"/>
+    </form>
+    <br/>
+    <span style="color:red">{{msg}}</span><br/>
+    <a routerLink="/signUp">SignUp</a>
+</div>

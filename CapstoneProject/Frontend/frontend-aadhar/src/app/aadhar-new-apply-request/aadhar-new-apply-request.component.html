@@ -1,0 +1,44 @@
+<div>
+    
+    <div *ngIf="flag">
+            <h2>Update Details</h2>
+            <form (ngSubmit)="updateDataFromDb()">
+                <label>Email</label>
+                <input type="text" name="email" [(ngModel)]="email" readonly/><br/>
+                <label>Status</label>
+                <input type="text" name="status" [(ngModel)]="status"/><br/>
+                <label>Aadhar No</label>
+                <input type="number" name="uadhno" [(ngModel)]="uadhno"/><br/>
+                <input type="submit" value="update data"/>
+                <input type="reset" value="reset"/>
+            </form>
+    </div>
+    <h3>New Aadhar Request</h3>
+    <span *ngFor="let p of users">
+        <table class="table table-sm" border="2px">
+            <tr>
+                <th>Email</th>
+                <th>Name</th>
+                <th>Father's Name</th>
+                <th>Address</th>
+                <th>Mobile No</th>
+                <th>DOB</th>
+                <th>Status</th>
+                <th>Aadhar No</th>
+                <th>Update</th>
+            </tr>
+            <tr>
+                <td>{{p.email}}</td>
+                <td>{{p.uname}}</td>
+                <td>{{p.fname}}</td>
+                <td>{{p.address}}</td>
+                <td>{{p.phone}}</td>
+                <td>{{p.dob}}</td>
+                <td>{{p.status}}</td>
+                <td>{{p.uadhno}}</td>
+                <td><input type="button" value="update" (click)="updateUser(p)"/></td>
+            </tr>
+        </table>
+        
+    </span>
+</div>
